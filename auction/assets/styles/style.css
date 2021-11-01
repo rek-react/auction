@@ -2054,13 +2054,12 @@ body._lock {
   }
 
   .round__text {
-    background: none;
+    background: none !important;
     padding-left: 0;
   }
 
   .round__text::before {
-    content: "";
-    background: none;
+    background: none !important;
   }
 
   .quotes__decor {
@@ -2080,7 +2079,7 @@ body._lock {
 
   .form__btn span {
     padding-right: 0;
-    background: none;
+    background: none !important;
   }
 }
 @supports (-webkit-appearance:none){

@@ -152,11 +152,10 @@
          }
       }
       @media (max-width: 425px) {
-         background: none;
+         background: none !important;
          padding-left: 0;
          &::before {
-            content: "";
-            background: none;
+            background: none !important;
          }
       }
    }

@@ -1673,7 +1673,7 @@ body._lock {
   }
 
   .lots__btn {
-    font-size: calc(15px + 6 * ((100vw - 320px) / 880));
+    font-size: calc(20px + 1 * ((100vw - 320px) / 880));
   }
 
   .lots__all-lots {

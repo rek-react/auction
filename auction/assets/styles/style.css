@@ -588,7 +588,6 @@ body._lock {
 
 .lots__num::before {
   content: "";
-  background: url("../images/lots/icon/watch.png");
   width: 25px;
   height: 25px;
   display: block;
@@ -598,6 +597,14 @@ body._lock {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.lots__num:first-child::before {
+  background: url("../images/lots/icon/watch.png") no-repeat;
+}
+
+.lots__num:last-child::before {
+  background: url("../images/lots/icon/hummer.png") no-repeat;
 }
 
 .lots__price {
@@ -1774,8 +1781,8 @@ body._lock {
 @media (max-width: 767px) {
   .hamburger-menu {
     display: block;
-    width: 30px;
-    height: 25px;
+    width: 40px;
+    height: 35px;
     z-index: 3;
     cursor: pointer;
     position: relative;
@@ -2090,7 +2097,8 @@ body._lock {
 .user-menu__link_4{background:url("../images/header/icon/hammer-menuUser.webp") left no-repeat}
 .slider__arrow{background:url("../images/intro/icon/arrow.webp")}
 .lots__time::after{background:url("../images/lots/icon/time.webp") 0 0 no-repeat}
-.lots__num::before{background:url("../images/lots/icon/watch.webp")}
+.lots__num:first-child::before{background:url("../images/lots/icon/watch.webp") no-repeat}
+.lots__num:last-child::before{background:url("../images/lots/icon/hummer.webp") no-repeat}
 .lots__arrow span{background:url("../images/lots/icon/arrow.webp") no-repeat}
 .round__text{background:url("../images/round/icon/pattern.webp") 0 0 repeat-y}
 .round__text::before{background:url("../images/round/icon/pattern-item.webp") no-repeat}

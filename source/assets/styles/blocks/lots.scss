@@ -96,7 +96,6 @@
       transform: translateY(-50%);
       &::before {
          content: "";
-         background: url("../images/lots/icon/watch.png");
          width: 25px;
          height: 25px;
          display: block;
@@ -104,6 +103,16 @@
          left: 50%;
          top: 0;
          transform: translateX(-50%);
+      }
+      &:first-child {
+         &::before {
+            background: url("../images/lots/icon/watch.png") no-repeat;
+         }
+      }
+      &:last-child {
+         &::before {
+            background: url("../images/lots/icon/hummer.png") no-repeat;
+         }
       }
       border-bottom: 1px solid $mainColor;
    }

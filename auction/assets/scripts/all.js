@@ -8698,7 +8698,7 @@ function checkibg() {
       const _ibg = ibg[index];
       if (_ibg.querySelector('img')) {
          const ibgImage = _ibg.querySelector('img')
-         _ibg.style.backgroundImage = `url(../../${ibgImage.getAttribute('src')})`
+         _ibg.style.backgroundImage = `url(${ibgImage.getAttribute('src')})`
       }
    }
 }

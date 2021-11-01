@@ -1,0 +1,40 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+   @font-face {
+      font-family: $font_name;
+      font-display: swap;
+      src: url("../fonts/#{$file_name}.woff") format("woff");
+      font-weight: #{$weight};
+      font-style: #{$style};
+   }
+}
+$mainColor: #bb9c66;
+@import "fonts";
+@import "reboot";
+@import "mixins";
+@import "ibg";
+
+body {
+   font-family: "PTSans";
+   font-size: 14px;
+   &._lock {
+      overflow: hidden;
+   }
+}
+
+@import "wrapper&container";
+@import "swiper";
+@import "blocks/header";
+.main {
+   padding-top: 75px;
+}
+@import "blocks/intro";
+@import "slider";
+@import "blocks/lots";
+@import "blocks/heading";
+@import "blocks/round/round";
+@import "blocks/round/cart";
+@import "blocks/services";
+@import "blocks/quotes";
+@import "blocks/info/info";
+@import "blocks/info/subscribe";
+@import "blocks/footer";

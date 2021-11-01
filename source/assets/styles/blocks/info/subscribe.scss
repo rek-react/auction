@@ -1,0 +1,85 @@
+.subscribe {
+   &__body {
+      display: flex;
+      margin: 0 -40px;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      @media (max-width: 767px) {
+         margin: 0 -25px;
+      }
+   }
+
+   &__col {
+      flex: 0 1 50%;
+      padding: 0 40px;
+      @media (max-width: 720px) {
+         flex: 0 1 100%;
+         margin-bottom: 20px;
+      }
+      @media (max-width: 767px) {
+         padding: 0 25px;
+      }
+   }
+
+   &__item {
+   }
+
+   &__title {
+   }
+
+   &__text {
+      line-height: 20px;
+   }
+}
+.form {
+   border: 3px solid $mainColor;
+   display: flex;
+
+   @media (max-width: 720px) {
+      display: inline-flex;
+   }
+   @media (max-width: 525px) {
+      display: flex;
+   }
+   &__input {
+      padding: 15px 13px 15px 25px;
+      flex: 1 1 auto;
+      font-size: 16px;
+      @media (max-width: 525px) {
+         padding: 15px 5px 15px 10px;
+      }
+   }
+
+   &__btn {
+      font-size: 21px;
+      text-transform: uppercase;
+      flex: 0 0 95px;
+      width: 95px;
+      font-weight: 500;
+      position: relative;
+      font-family: "PFDin";
+      background-color: #fff;
+      &::before {
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 50%;
+         transform: translateY(-50%);
+         width: 2px;
+         height: calc(100% - 20px);
+         background-color: $mainColor;
+      }
+      span {
+         padding-right: 35px;
+         background: url("../images/info/icon/arrow-mini.png") right center no-repeat;
+      }
+      @media (max-width: 360px) {
+         flex: 1 1 auto;
+         width: 50px;
+         span {
+            padding-right: 0;
+            background: none;
+         }
+      }
+   }
+}

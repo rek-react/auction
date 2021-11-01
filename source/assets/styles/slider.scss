@@ -1,0 +1,51 @@
+.slider {
+   position: absolute;
+   left: 50%;
+   width: 100px;
+   height: 100px;
+   transform: translate(-50%, 50%);
+   bottom: 0;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &::before {
+      content: "";
+      background: #fff;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      width: 70%;
+      height: 70%;
+   }
+   &__arrow {
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      width: 14px;
+      height: 26px;
+      background: url("../images/intro/icon/arrow.png");
+   }
+   &__arrow-prev {
+   }
+   &__arrow-next {
+      transform: rotate(180deg);
+   }
+   &__decor {
+      margin: 0 12px;
+      position: relative;
+      z-index: 1;
+      animation: rotate 6s infinite linear;
+
+      @keyframes rotate {
+         0% {
+            transform: rotate(0deg);
+         }
+         100% {
+            transform: rotate(360deg);
+         }
+      }
+   }
+}

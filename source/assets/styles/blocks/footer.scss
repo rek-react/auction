@@ -1,0 +1,92 @@
+.footer {
+   background-color: #1c242a;
+   @include adaptive-value(padding-top, 40, 30, 1);
+   @include adaptive-value(padding-bottom, 40, 30, 1);
+   &__container {
+      display: flex;
+      @media (max-width: 767px) {
+         display: block;
+         text-align: center;
+      }
+   }
+
+   &__logo {
+   }
+
+   &__copyright {
+      color: $mainColor;
+      margin-top: 15px;
+      white-space: nowrap;
+   }
+
+   &__menu {
+      padding: 0 15px 0 40px;
+      flex: 1 1 auto;
+      @media (max-width: 767px) {
+         padding: 20px 0;
+      }
+      @media (max-width: 767px) {
+         max-width: 400px;
+         margin: 0 auto;
+      }
+   }
+
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+         margin: 10px 15px 0 0;
+      }
+      @media (max-width: 767px) {
+         justify-content: center;
+      }
+      @media (max-width: 525px) {
+         li {
+            margin: 20px 20px 0 0;
+         }
+      }
+   }
+
+   &__link {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: "PFdin";
+      @include adaptive-value(font-size, 14, 17, 1);
+      font-weight: 500;
+   }
+
+   &__contacts {
+      flex: 0 0 auto;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      a {
+         color: $mainColor;
+      }
+      @media (max-width: 767px) {
+         align-items: center;
+      }
+   }
+
+   &__telephone {
+      font-family: "BravoRG";
+      @include adaptive-value(font-size, 50, 30, 1);
+      display: flex;
+      align-items: flex-start;
+      small {
+         font-size: 25px;
+         margin-right: 7px;
+      }
+   }
+
+   &__callback {
+      padding-left: 15px;
+      background: url("../images/footer/icon/callback.png") 0 0 no-repeat;
+      margin-top: 15px;
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-decoration-color: $mainColor;
+   }
+}

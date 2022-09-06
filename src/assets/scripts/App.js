@@ -18,4 +18,5 @@ class App {
       handleSwiper()
    }
 }
-new App().init()
+const app = new App()
+app.init()

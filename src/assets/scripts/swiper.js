@@ -1,7 +1,8 @@
-import { Swiper } from 'swiper'
+import { Navigation, Swiper } from 'swiper'
 
 export const handleSwiper = () => {
 
+    Swiper.use([Navigation])
     const swiperIntroBody = new Swiper('.intro__body', {
         slidesPerView: 1,
         observer: true,
